@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.scarnedice.MainActivity"
+    android:background="#fafafa">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="YOUR SCORE:0 \nCOMPUTER'S SCORE:0 \nTURN SCORE:0"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fafafa"
+        android:textSize="20dp"
+        android:padding="20dp"/>
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/dice1"
+        android:id="@+id/dice_image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/roll"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:text="ROLL"
+            android:onClick="roll"
+            android:padding="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#fafafa"
+            android:textSize="25dp"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/hold"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:text="HOLD"
+            android:onClick="hold"
+            android:padding="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#fafafa"
+            android:textSize="25dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/reset"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:text="RESET"
+            android:onClick="reset"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:textColor="#fafafa"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+</LinearLayout>
